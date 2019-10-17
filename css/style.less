@@ -1,0 +1,271 @@
+@import "base.css";
+@import "swiper.min.css";
+
+@theme: #cea54f;
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #e2e1e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cea54f;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e2e1e1;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  h1 {
+    font-size: 0;
+    visibility: hidden;
+    text-indent: -9999px;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 24px;
+
+    a {
+      display: block;
+      width: 154px;
+      height: 42px;
+      background: url(../images/logo_nav.png) no-repeat;
+    }
+  }
+
+  .nav {
+    margin-top: 28px;
+
+    nav {
+      position: relative;
+      font-size: 16px;
+    }
+
+    span.abg {
+      display: block;
+      box-sizing: content-box;
+      padding: 0 22px;
+      height: 34px;
+      background-color: #fff;
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      transition: all 0.4s;
+    }
+
+    li {
+      float: left;
+      position: relative;
+      z-index: 2;
+    }
+
+    a {
+      color: @theme;
+      display: block;
+      font-size: 16px;
+      padding: 0 22px;
+      line-height: 34px;
+    }
+  }
+}
+
+footer {
+  background-color: #1b1b1b;
+
+  .footer-top {
+    padding: 60px 0 50px;
+    border-bottom: 1px solid #0c0c0c;
+  }
+
+  .footer-nav {
+    float: left;
+    padding-right: 196px;
+    border-right: 1px solid #2a2a2a;
+
+    li {
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      color: #cecece;
+      line-height: 32px;
+      border-bottom: 1px solid transparent;
+
+      transition-duration: .1s;
+
+      &.active, &:hover {
+        color: @theme;
+        border-bottom: 1px solid @theme;
+        transition-duration: .1s;
+      }
+    }
+  }
+
+  .footer-logo {
+    float: left;
+    padding-left: 160px;
+    padding-right: 216px;
+    border-left: 1px solid #0c0c0c;
+    border-right: 1px solid #2a2a2a;
+  }
+
+  .footer-contact {
+    float: left;
+    padding-left: 80px;
+    border-left: 1px solid #0c0c0c;
+
+    .footer-contact-item {
+      margin-bottom: 30px;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+    }
+
+    i {
+      color: @theme;
+      display: block;
+      float: left;
+      font-size: 20px;
+    }
+
+    p {
+      float: left;
+      margin-left: 15px;
+      width: 200px;
+      font-size: 14px;
+      color: #cecece;
+      line-height: 20px;
+    }
+
+    .qrcode {
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin-left: 15px;
+    }
+
+    span {
+      display: block;
+      float: left;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      color: #969696;
+      writing-mode: vertical-lr;
+      margin-left: 8px;
+      margin-top: 11px;
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid #2a2a2a;
+    text-align: center;
+    padding: 18px 0;
+
+    p, a {
+      font-size: 14px;
+      line-height: 38px;
+      color: #888;
+    }
+  }
+}
+
+.banner {
+
+  .swiper-pagination {
+    bottom: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 3px;
+    margin: 0 3px;
+    background-color: rgba(255, 255, 255, .65);
+    border-radius: 0;
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      background-color: @theme;
+    }
+
+  }
+}
+
+.introduce {
+  padding: 50px 0 30px;
+  background-color: #f7f8f8;
+
+  .title {
+    text-align: center;
+    font-size: 36px;
+    color: #444;
+    margin-bottom: 30px;
+  }
+
+  .desc {
+    text-align: center;
+    font-size: 36px;
+    color: @theme;
+    margin-bottom: 90px;
+  }
+
+  .swiper-slide {
+    height: 275px;
+  }
+
+  .introduce-swiper {
+    position: relative;
+  }
+
+  .swiper-pagination {
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #bfbfbf;
+    opacity: 1;
+    margin: 0 5px;
+    outline: none;
+
+    &.swiper-pagination-bullet-active {
+      background-color: @theme;
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 235px;
+      background-color: #dcdcdc;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>湖南华进</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1463777_303469kpxx8.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="header-wrap clearfix">
+            <div class="logo fl">
+                <a href="index.html">
+                    <h1>湖南华进</h1>
+                </a>
+            </div>
+            <div class="nav fr">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="">首页</a></li>
+                        <li><a href="">关于华进</a></li>
+                        <li><a href="">我们的事业</a></li>
+                        <li><a href="">我们的优势</a></li>
+                        <li><a href="">我们的足迹</a></li>
+                        <li><a href="">我们的战略</a></li>
+                        <li><a href="">我们的新闻</a></li>
+                        <li><a href="">我们的伙伴</a></li>
+                    </ul>
+                    <span class="abg"></span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner_home_01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner_home_02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner_home_03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner_home_04.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div>
+
+<div class="introduce">
+   <div class="main">
+       <div class="title"><span>华实鼎新  进拓致远</span></div>
+       <div class="desc"><span>探索中国生态文明，打造绿色生活方式</span></div>
+       <div class="introduce-swiper">
+           <div class="swiper-container">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+
+                   </div>
+                   <div class="swiper-slide">
+
+                   </div>
+                   <div class="swiper-slide">
+
+                   </div>
+                   <div class="swiper-slide">
+
+                   </div>
+               </div>
+           </div>
+           <div class="swiper-pagination"></div>
+       </div>
+   </div>
+</div>
+
+<footer>
+    <div class="main">
+        <div class="footer-top clearfix">
+            <div class="footer-nav">
+                <ul>
+                    <li><a class="active" href="">首页</a></li>
+                    <li><a href="">关于华进</a></li>
+                    <li><a href="">我们的事业</a></li>
+                    <li><a href="">我们的优势</a></li>
+                    <li><a href="">我们的足迹</a></li>
+                    <li><a href="">我们的战略</a></li>
+                    <li><a href="">我们的新闻</a></li>
+                    <li><a href="">我们的伙伴</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a href="tel:0731-8578-2809">
+                    <img src="images/footer_logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-item">
+                    <i class="iconfont icon-qq"></i>
+                    <p>123-321-00</p>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="iconfont icon-youxiang"></i>
+                    <p>unanhuajin@qq.com</p>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="iconfont icon-dizhi"></i>
+                    <p>湖南省长沙市天心区湘府中路369号星城荣域园综合楼1005室</p>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="iconfont icon-qrcode"></i>
+                    <img class="qrcode" src="images/wechatCode.jpg" alt="">
+                    <span>扫码关注华进</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@hunanhuajin 2019 湘ICP备2345678号 湖南华进时代生态环境科技集团有限公司 技术支持：<a href="http://www.zhitouweilai.com">智投未来</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    var homeBanner = new Swiper(".banner .swiper-container", {
+        speed: 800,
+        loop: true,
+        touchRatio: 0,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.banner .swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            prevEl: '.banner .swiper-button-prev',
+            nextEl: '.banner .swiper-button-next'
+        },
+    })
+
+    var introduce = new Swiper(".introduce-swiper .swiper-container", {
+        speed:600,
+        slidesPerView: 3,
+        pagination: {
+            el: '.introduce-swiper .swiper-pagination',
+            clickable: true
+        },
+    })
+</script>
+</html>
